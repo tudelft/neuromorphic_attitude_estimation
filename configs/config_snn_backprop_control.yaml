@@ -1,0 +1,43 @@
+
+# Type
+type:
+  net: spiking  # spiking or regular net
+  loss_func: MSELoss
+
+device:
+  cpu
+
+data:
+  dir: /home/sstroobants/ownCloud/PhD/Code/IMU_NN/data/training_datasets_control/simulation_100hz__bins_minmax
+  encoding: null
+  encoding_name: null
+  nbins: null
+  output: control
+  rotate_yaw: False
+  normalization: minmax
+  seq_length: 1000
+  train_batch_size: 40
+  val_batch_size: 10
+  frequency: 100
+
+
+# Training parameters
+train:
+  workers: 10  # parallel processing workers
+  gens: 600  # generations
+  learning_rate: 0.01
+  optimizer: Adam
+
+# Network
+net:
+  input_size: 6
+  hidden_size: 150
+  output_size: 2
+  dt: 1
+  neuron_params:
+    alpha: 20
+    tau_syn: 0.1
+    tau_mem: 0.05
+    v_thresh: 0.5
+    tau_syn_out: 0.5
+    tau_mem_out: 0.5

@@ -1,0 +1,52 @@
+
+# Type
+type:
+  net: spiking  # spiking or regular net
+  loss_func: MSELoss
+
+device:
+  cpu
+
+data:
+  dir: /home/sstroobants/ownCloud/PhD/Code/IMU_NN/data/training_datasets/simulation_100hz__bins_minmax
+  encoding: null
+  encoding_name: grf
+  nbins: 60
+  output: eulers
+  rotate_yaw: False
+  normalization: minmax
+  seq_length: 2000
+  train_batch_size: 10
+  val_batch_size: 10
+  frequency: 100
+
+
+# Evolution parameters
+train:
+  workers: 10  # parallel processing workers
+  gens: 500  # generations
+  evo:
+    first_pop: 1000  # first population, lottery ticket hypothesis
+    pop: 60  # population size
+    trunk: 50  # truncation selection: how many parents?
+
+# Mutation parameters
+mutate:
+  scale: 0.002  # scale of mutations
+  prob: 1.0  # probability of mutation
+  mut_dict:
+    weight: [-.inf, .inf]
+    v_decay: [0, 1]
+    thresh: [0, 1]
+
+# Network
+net:
+  input_size: 6
+  hidden_size: 10  # layer sizes (excluding encoding and decoding layer)
+  output_size: 2
+  obs_dim: 3  # number of observations
+  obs_buckets: 39  # buckets per observation (encoding layer size: obs dim * (obs buckets + 1))
+  obs_range: [-10, 10]  # observation range
+  act_dim: 3  # number of actions
+  act_pop: 10  # use population of neurons to get better traces (per dimension)
+  act_window: 5  # window for spike accumulation

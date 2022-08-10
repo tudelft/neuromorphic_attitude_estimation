@@ -1,0 +1,44 @@
+
+# Type
+type:
+  net: norse_recurrent_snn
+  loss_func: MSELoss
+
+device:
+  cpu
+
+data:
+  dir: /home/sstroobants/ownCloud/PhD/Code/IMU_NN/data/training_datasets/simulation_200hz__bins_minmax
+  encoding: null
+  encoding_name: null
+  nbins: null
+  output: eulers
+  rotate_yaw: False
+  normalization: minmax
+  seq_length: 2000
+  inter_seq_dist: 100
+  train_batch_size: 40
+  val_batch_size: 40
+  frequency: 200
+
+# Training parameters
+train:
+  workers: 10  # parallel processing workers CURRENTLY NOT USED
+  gens: 175  # generations
+  learning_rate: 0.005
+  optimizer: Adam
+  learn_params: True
+
+# Network
+net:
+  input_size: 6
+  hidden_size: 100
+  output_size: 2
+  dt: 1
+  neuron_params:
+    alpha: 20
+    tau_syn: 0.08
+    tau_mem: 0.03
+    v_thresh: 0.5
+    tau_syn_out: 0.5
+    tau_mem_out: 0.08

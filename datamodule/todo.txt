@@ -1,0 +1,11 @@
+TODO's for the datamodule:
+
+- Would be nice to include a GUI that makes loading folders easier by:
+    - Making it easy to select a folder
+    - Shows the entire dataset and lets user decide on what section to skip
+
+- What sigma should be used for GRF encoding? This heavily influences the amount and which neurons spike
+
+- Improve the data_viz functions. Now it is really basic.
+
+- Crazyflie files should be sorted and also transformed
