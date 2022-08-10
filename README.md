@@ -23,4 +23,6 @@ This work is licensed under multiple licenses
 
 ## Data availability
 The data for this paper can be found at:
+https://data.4tu.nl/account/articles/20464830
+
 
