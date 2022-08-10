@@ -8,7 +8,7 @@ SPDX-License-Identifier: MIT
 This repository is the code that accompanies the work published in the Neuromorphic Computing and Engineering Journal, titled:
 Neuromorphic computing for attitude estimation onboard quadrotors
 Authors: S. Stroobants, J. Dupeyroux and G. de Croon.
-LINK TO ARXIV/NCE WEBSITE
+https://iopscience.iop.org/article/10.1088/2634-4386/ac7ee0
 
 ## Acknowledgements
 - The code for the Tensor implementations for quaternion-calculations was inspired by work from D. Weber
