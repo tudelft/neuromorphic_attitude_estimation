@@ -5,10 +5,10 @@ SPDX-License-Identifier: MIT
 -->
 
 # IMU_NN
-This repository is the code that accompanies the work published in the Neuromorphic Computing and Engineering Journal, titled:
-Neuromorphic computing for attitude estimation onboard quadrotors
-Authors: S. Stroobants, J. Dupeyroux and G. de Croon.
-https://iopscience.iop.org/article/10.1088/2634-4386/ac7ee0
+This repository is the code that accompanies the work published in the Neuromorphic Computing and Engineering Journal, titled:  
+Neuromorphic computing for attitude estimation onboard quadrotors  
+Authors: S. Stroobants, J. Dupeyroux and G. de Croon.  
+https://iopscience.iop.org/article/10.1088/2634-4386/ac7ee0  
 
 ## Acknowledgements
 - The code for the Tensor implementations for quaternion-calculations was inspired by work from D. Weber
@@ -22,7 +22,7 @@ This work is licensed under multiple licenses
 - Some code borrowed from [LiyuanLucesLiu/RAdam](https://github.com/LiyuanLucasLiu/RAdam) is licensed under Apache 2.0
 
 ## Data availability
-The data for this paper can be found at:
-https://data.4tu.nl/account/articles/20464830
+The data for this paper can be found at:  
+https://data.4tu.nl/articles/dataset/Datasets_used_for_the_paper_Neuromorphic_Attitude_Estimation_onboard_quadrotors/20464830/1
 
 
