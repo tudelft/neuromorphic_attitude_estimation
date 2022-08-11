@@ -12,7 +12,6 @@ https://iopscience.iop.org/article/10.1088/2634-4386/ac7ee0
 
 ## Acknowledgements
 - The code for the Tensor implementations for quaternion-calculations was inspired by work from D. Weber
-- The code for the Spiking neuron layers was inspiredby work from J. Hagenaars
 
 ## Licenses
 This work is licensed under multiple licenses
